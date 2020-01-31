@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<h1>come home</h1>
+<form action="{% url 'dashboard' %}" method="post">
+<form>
+
+<div class="form-group">
+    <label for="">Username:</label>
+    {{form.loginusername}}
+</div>
+
+<div class="form-group">
+    <label for="">Password:</label>
+    {{form.loginPassword}}
+    <input type="submit" value="Login" id ="btn" class="btn btn-primary"/>
+
+</div>
+</form>
+</form>
+{% endblock %}

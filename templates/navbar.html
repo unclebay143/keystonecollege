@@ -1,0 +1,60 @@
+{% load static %}
+
+
+<header>
+
+    <h1>KeyStone College</h1>
+    <hr />
+    <aside style="font-size:13px;"><i>Creating new hands in Technology</i></aside>
+    </header>
+   
+    <div class="keymenu" id="keymyTopnav">
+      <a href="{% url 'index' %}" class="keyactive">HOME</a>
+      <div class="keydropdown">
+        <button class="keydropbtn">PORTALS
+        
+        </button>
+        <div class="keydropdown-content">
+      <strong style="text-align:center; color:white; font-size:11px; font-style:italic;"><hr/>Student Portals<hr/></strong>
+          <a href="#">Returning Students</a>
+          <a href="#">Undergraduates</a>
+          <a href="#">Freshers</a>
+        <a href="#">Postgraduates</a>
+        <strong style="text-align:center; color:white; font-size:11px; font-style:italic;"><hr/>Staffs Portals<hr/></strong>
+        <a href="#">Academics</a>
+        <a href="#">Non-Academics</a>
+        </div>
+      </div> 
+      
+      <div class="keydropdown">
+        <button class="keydropbtn">LIBRARY
+        </button>
+        <div class="keydropdown-content">
+      
+          <a href="#">E-library</a>
+          <a href="#">School Library</a></a>
+        </div>
+        </div>
+      <div class="keydropdown">
+        <button class="keydropbtn">SCHOOLS
+        
+        </button>
+        <div class="keydropdown-content">
+          <a href="#">School of Science and Technology(SST)</a>
+          <a href="#">School of Life Science(SLS)</a>
+          <a href="#">School of Information Communication and Technology(SICT)</a>
+        <a href="#">School ofEngineering and Engineering Technology(SEET)</a>
+        <a href="#">School of Postgraduate Studies</a>
+        </div>
+      </div> 
+      <a href="{% url 'admission' %}">ADMISSION</a>
+      <a href="#about">ABOUT</a>
+     <a href="#contact">CONTACT</a>
+    <input type="text" placeholder="Search..">
+    </ul>
+    </div>
+    </div>
+
+
+
+    

@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{%block title%}Admission{%endblock%}
+
+{% block body%}
+
+       <div class="formcontainer">
+        <h1>Signup Form</h1>
+       
+    <form action="{% url 'addStudent' %}" method="post">
+           {% csrf_token %}
+       <form>
+        <div class="form-group">
+            <label for="">Jamb Registation Number:</label>
+             {{form.jambnumber}}
+         </div>
+           <div class="form-group">
+               <label for="">Username:</label>
+             {{form.username}}
+                
+            </div>
+    
+           <div class="form-group">
+            <label for="">Password:</label>
+            {{form.password}}
+            
+        </div>
+        <div class="form-group">
+            <label for="">Mobile Number:</label>
+            {{form.phone}}
+
+        </div>
+    
+        <div class="form-group">
+         <label for="">E-mail:</label>
+         {{form.email}}
+                  <input type="submit" value="Register" id ="btn" class="btn btn-primary"/>
+                  <button type="button" value="Login" id ="btn" class="btn btn-primary btn-xs">
+                      <a style="color:white; text-decoration:none" href="{% url 'login' %}">Login</a></button>
+
+
+     </div>
+       </form>
+
+</div>
+{% endblock %} 
