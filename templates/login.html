@@ -1,10 +1,9 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<h1>come home</h1>
+<div class="container">
+<h1>Login</h1>
 <form action="{% url 'dashboard' %}" method="post">
-<form>
-
 <div class="form-group">
     <label for="">Username:</label>
     {{form.loginusername}}
@@ -17,5 +16,6 @@
 
 </div>
 </form>
-</form>
-{% endblock %}
+</div>
+
+    {% endblock %}

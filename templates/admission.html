@@ -10,28 +10,28 @@
            {% csrf_token %}
        <form>
         <div class="form-group">
-            <label for="">Jamb Registation Number:</label>
+            <label>Jamb Registation Number:</label>
              {{form.jambnumber}}
          </div>
            <div class="form-group">
-               <label for="">Username:</label>
+               <label for="username">Username:</label>
              {{form.username}}
                 
             </div>
     
            <div class="form-group">
-            <label for="">Password:</label>
+            <label for="password">Password:</label>
             {{form.password}}
             
         </div>
         <div class="form-group">
-            <label for="">Mobile Number:</label>
+            <label for="phone">Mobile Number:</label>
             {{form.phone}}
 
         </div>
     
         <div class="form-group">
-         <label for="">E-mail:</label>
+         <label for="email">E-mail:</label>
          {{form.email}}
                   <input type="submit" value="Register" id ="btn" class="btn btn-primary"/>
                   <button type="button" value="Login" id ="btn" class="btn btn-primary btn-xs">
