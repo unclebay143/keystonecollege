@@ -1,0 +1,48 @@
+{% extends 'base3.html'%}
+{% load static %}
+
+{% block title %} Art Department {% endblock %}
+
+{% block body %}
+<div class="topic">
+<h2>ART DEPARTMENTS</h2>
+<a href="{% url 'science' %}">Science</a>
+<a href="{% url 'commercial' %}">Commercial</a>
+</div>
+<div class="row">
+<div class="col-md-4">
+<h2 class="heading">Our Vision</h2>
+<p>The Art Department is holding onto the vision of building young and promising students into the Art market. </p>
+<h4 class="heading">Books For Sale(Recommended)</h4>
+{% for item in artbooks %}
+<ul>
+  <li>{{item}}</li>
+</ul>
+{% endfor %}
+</div>
+<div class="col-md-8">
+<div class="col8">
+<h3 class="heading">Head Of Department Speech</h3>
+<section class="article">
+<figure>
+<img src="/static/img/hodart.gif" width="134" alt="HOD" class="img"/>
+<p>
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodart}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+<br>
+<b>THANKS</b>
+</p>
+</figure>
+</section>
+</div>
+</div>
+</div>
+{% endblock %}

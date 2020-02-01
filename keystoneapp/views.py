@@ -13,7 +13,7 @@ from django.contrib.auth.decorators import login_required
 def Index(request):
     return render(request, 'index.html')
 
-#student registrationform 
+#student registrationform
 def Admission(request):
     context = {
         "form":RegistrationForm
@@ -26,7 +26,6 @@ def AddStudent(request):
 
     if form.is_valid():
         studentregister = RegistrationData(
-                                           jambnumber = form.cleaned_data['jambnumber'],
                                            username = form.cleaned_data['username'],
                                            password = form.cleaned_data['password'],
                                            email = form.cleaned_data['email'],
@@ -42,15 +41,9 @@ def AddStudent(request):
 
 #success page
 def Success(request):
-    messages.add_message(request, messages.SUCCESS, "You have signup sucessfully...Proceed to login")
+    messages.add_message(request, messages.SUCCESS, "You have signup sucessfully...Proceed to Login")
     return render(request, 'success.html')
 
-#STUDENT DASHBOARD
-
-def Dashboard(request):
-    return render(request, 'dashboard.html')
-
-#Student Login
 def Login(request):
     return render(request, 'login.html')
 

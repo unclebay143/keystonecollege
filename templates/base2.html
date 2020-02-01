@@ -1,0 +1,19 @@
+{% load static%}
+<html lang="en">
+    <link rel="stylesheet" href="{% static  'styles/portal.css' %}">
+    <link rel="stylesheet" href="{% static  'styles/footandnav.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="refresh" content="">
+    <meta name="Author" content="Ayodele Samuel Adebayo">
+    <title>{% block title %} {% endblock%}</title>
+<body>
+  {% include 'navbar.html'%}
+    {% block body %}
+
+    {% endblock%}
+    <!-- include footer.html -->
+    {% include 'footer.html'%}
+
+</body>
+</html>

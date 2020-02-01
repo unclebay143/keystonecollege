@@ -1,0 +1,24 @@
+.topic, .topic a{
+  text-align: center;
+  background-color: black;
+  padding:13px;
+  color:green;
+}
+.row{
+  padding:10px;
+}
+.heading{
+  text-align: center;
+  padding:19px;
+}
+.col8{
+  background-color: wheat;
+  height:450px;
+  }
+.article{
+    padding:10px;
+  }
+.img{
+  padding: 10px;
+  float: left;
+}

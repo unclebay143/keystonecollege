@@ -1,21 +1,33 @@
 {% extends 'base.html' %}
+{%block title%}Student Login{%endblock%}
+
 
 {% block body %}
 <div class="container">
-<h1>Login</h1>
-<form action="{% url 'dashboard' %}" method="post">
-<div class="form-group">
-    <label for="">Username:</label>
-    {{form.loginusername}}
-</div>
 
-<div class="form-group">
-    <label for="">Password:</label>
-    {{form.loginPassword}}
-    <input type="submit" value="Login" id ="btn" class="btn btn-primary"/>
+  <div class="formcontainer">
+   <h1>Login</h1>
 
-</div>
-</form>
-</div>
+  <form action="{% url 'dashboard' %}" method="post">
+      {% csrf_token %}
+  <form>
+      <div class="form-group">
+          <label for="username">Username:</label>
+        {{form.username}}
+        <input type="text" name="" value="">
+
+       </div>
+
+      <div class="form-group">
+       <label for="password">Password:</label>
+       {{form.password}}
+       <input type="text" name="" value="">
+
+   </div>
+             <input type="submit" value="Login" id ="btn" class="btn btn-primary"/>
+            </div>
+  </form>
+
+  </div>
 
     {% endblock %}

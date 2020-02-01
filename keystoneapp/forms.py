@@ -2,11 +2,6 @@ from django import forms
 
 
 class RegistrationForm(forms.Form):
-    jambnumber = forms.CharField(max_length=12,
-                                 widget=forms.TextInput(attrs={
-                                     'class':'form-control',
-                                     'placeholder':'Jamb Registration Number',
-                                 }))
     username = forms.CharField(max_length=100,
                                  widget=forms.TextInput(attrs={
                                      'class':'form-control',

@@ -1,0 +1,48 @@
+{% extends 'base3.html'%}
+{% load static %}
+
+{% block title %} Science Department {% endblock %}
+
+{% block body %}
+<div class="topic">
+<h2>SCIENCE DEPARTMENTS</h2>
+<a href="{% url 'art' %}">Art</a>
+<a href="{% url 'commercial' %}">Commercial</a>
+</div>
+<div class="row">
+<div class="col-md-4">
+<h2 class="heading">Our Vision</h2>
+<p>The Science Department is holding onto the vision of building young and promising students into the Science market. </p>
+<h4 class="heading">Books For Sale(Recommended)</h4>
+{% for item in sciencebooks %}
+<ul>
+  <li>{{item}}</li>
+</ul>
+{% endfor %}
+</div>
+<div class="col-md-8">
+<div class="col8">
+<h3 class="heading">Head Of Department Speech</h3>
+<section class="article">
+<figure>
+<img src="/static/img/hodscience.jpg" width="134" alt="HOD" class="img"/>
+<p>
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+I {{hodscience}}, thank God for the priviledge and grace for been alive and in as the HOD of this prestigousdepartment
+<br>
+<b>THANKS</b>
+</p>
+</figure>
+</section>
+</div>
+</div>
+</div>
+{% endblock %}

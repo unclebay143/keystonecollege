@@ -1,0 +1,56 @@
+h3{
+  text-align: center;
+  padding-top:12px;
+}
+.container{
+  /* padding-left:43%; */
+  /* padding-top:10%; */
+  padding-bottom: 2%;
+}
+
+.trainalert{
+	background-color:;
+width:990px ; /* What I call the see-through window below */
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size:2.5em;
+
+    color:#CD3245;
+    text-shadow: #000 1px 1px 0;
+    box-sizing: border-box;
+
+    /* This is to make the text move across the see-through window */
+    /* in 20 seconds (=> scrolling speed) */
+    animation: trainalert 20s linear infinite;
+    -webkit-animation: trainalert 20s linear infinite;
+
+    /* This is for Safari that tends to render jerky marquees */
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+}
+
+/* This is to stop scrolling when hovering over the text */
+.trainalert:hover {
+    animation-play-state: paused;
+    -webkit-animation-play-state: paused
+}
+
+/* Make it move */
+/* If omitted, IE will not scroll the text  */
+@keyframes trainalert {
+    0% { text-indent: 26em }
+    100% { text-indent: -55em }
+
+}
+
+/* Make it move */
+/* If omitted, Chrome (possibly FF) will not scroll the text  */
+@-webkit-keyframes trainalert {
+    0% { text-indent: 26em }
+    100% { text-indent: -55em }
+
+}
+
+}
