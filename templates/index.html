@@ -2,7 +2,7 @@
 
 
 {% block title %} Keystone College:::HOME {% endblock %}
-<body>
+<body style="background-color:red;">
     {% block body %}
 
 <section class='keystoneimg'>
@@ -11,18 +11,21 @@
 <figcaption style="text-align:center; font-size:14px;">The KeyStone College Entrance</figcaption>
 </figure>
 </section>
+<div class="container">
 <div class="row">
     <div class="col-md-4">
-<h3 style="font-size:22px; text-align:justify;">Academics Links</h3>
+      <div class="link">
+<h3 >Academics Links</h3>
 <ul>
-<li><a  class="links" href="">School Buildings</a></li>
+<li><a href="">School Buildings</a></li>
 <li><a href="">Journals and Publications</a></li>
 <li><a href="">Our Programmes</a></li>
 <li><a href="">Vacancies</a></li>
 <li><a href="">Study Materials</a></li>
 <li><a href="">Online Counseling</a></li>
-<li><a href="">Contact Us</a></li>
+<li><a href="{% url 'contact' %}">Contact Us</a></li>
 </ul>
+</div>
 </div>
 <div class="col-md-4">
 <h2>Our Vision</h2>
@@ -37,13 +40,25 @@ entrepreneurship and Information and Communication Technology (ICT), to positive
 economy and thus the quality of life of her people.</span></p>
 </div>
 </div>
-<div class="">
-<h1>About Us</h1>
-<p>KeyStone was established in the year 2019 by <b>Mr. Ayodele Samuel Adebayo</b> during his
-    <strong>Web Development Project</strong>.<br/><br/>
-    In KeyStone we are interested in building the future developers in IT <em>across the world</em></p>
+<div class="row">
+  <div class="col-md-8">
+    <h1>About Us</h1>
+    <p>KeyStone was established in the year 2019 by <b>Mr. Ayodele Samuel Adebayo</b> during his
+    <strong>Web Development Project using Django and Bootstrap for the first time</strong>.
+    In KeyStone we are interested in building the future developers in IT,Economist Expert and Commercial Analyst <em>across the world</em></p>
 </div>
-
+<div class="col-md-4">
+  <div class="link">
+  <kbd style="text-align:left; padding:9px;">News</kbd> <br><br>
+  {% for items in newslink %}
+  <ul>
+  <li><a href="#">{{items}}</a></li>
+</ul>
+  {%endfor%}
+</div>
+</div>
+</div>
+</div>
 {% endblock %}
 </body>
 </html>

@@ -6,19 +6,22 @@
 {% block body %}
 <div class="topic">
 <h2>SCIENCE DEPARTMENTS</h2>
+<a href="{% url 'index' %}" class="keyactive">Home</a>
 <a href="{% url 'art' %}">Art</a>
 <a href="{% url 'commercial' %}">Commercial</a>
 </div>
 <div class="row">
 <div class="col-md-4">
-<h2 class="heading">Our Vision</h2>
-<p>The Science Department is holding onto the vision of building young and promising students into the Science market. </p>
-<h4 class="heading">Books For Sale(Recommended)</h4>
-{% for item in sciencebooks %}
-<ul>
-  <li>{{item}}</li>
+  <div class="link">
+  <h2 class="heading">Our Vision</h2>
+  <p>The Science Department is holding onto the vision of building young and promising students into the Science market. </p>
+  <h4 class="heading">Books For Sale(Recommended)</h4>
+  {% for item in sciencebooks %}
+  <ul>
+  <li><a href="#">{{item}}</a></li>
 </ul>
 {% endfor %}
+</div>
 </div>
 <div class="col-md-8">
 <div class="col8">

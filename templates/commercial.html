@@ -6,19 +6,22 @@
 {% block body %}
 <div class="topic">
 <h2>COMMERCE DEPARTMENTS</h2>
+<a href="{% url 'index' %}" class="keyactive">Home</a>
 <a href="{% url 'science' %}">Science</a>
 <a href="{% url 'art' %}">Art</a>
 </div>
 <div class="row">
 <div class="col-md-4">
-<h2 class="heading">Our Vision</h2>
+  <div class="link">
+  <h2 class="heading">Our Vision</h2>
 <p>The Commercial Department is holding onto the vision of building young and promising students into the commercial market. </p>
 <h4 class="heading">Books For Sale(Recommended)</h4>
 {% for item in commercebooks %}
 <ul>
-  <li>{{item}}</li>
+  <li><a href="#">{{item}}</a></li>
 </ul>
 {% endfor %}
+</div>
 </div>
 <div class="col-md-8">
 <div class="col8">

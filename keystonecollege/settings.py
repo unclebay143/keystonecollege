@@ -31,6 +31,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'accounts',
+    'distributor',
     'keystoneapp',
     'django.contrib.admin',
     'django.contrib.auth',
@@ -82,7 +84,7 @@ DATABASES = {
         'HOST': 'localhost',
         'PASSWORD': '',
         'PORT': '3306'
-        
+
             }
 }
 

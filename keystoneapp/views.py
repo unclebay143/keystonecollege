@@ -11,7 +11,12 @@ from django.contrib.auth.decorators import login_required
 # Create your views here.
 
 def Index(request):
-    return render(request, 'index.html')
+    context = {
+    "newslink":["American Visit to KeyStone","New Buildings to KeyStone",
+                "How to become a partner","KeyStone international recognition",
+                "Visit to KeyStone",]
+    }
+    return render(request, 'index.html',context)
 
 #student registrationform
 def Admission(request):

@@ -1,31 +1,23 @@
 body {
   margin:0;
-	font-family:Arial;
+	font-family:serif;
 	}
-.keystoneimg{
-	/* to shift the img down from overlaying with the header*/
-padding: px;
-margin-top:0px;
+.link a{
+  text-decoration: none;
+  color: green;
 }
-hr{
-border-color:yellow;
-width:px;
+.link a:hover{
+  color: hotpink;
+  background-color: ;
+  text-decoration: none;
 }
-
-.img{
-border-radius:8px;
-border:1px solid white;
-height:auto;
-padding-left:7%;
-}
-.mg{
-color: red;
-}
-
 /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
 @media (max-width: 600px) {
   left, middle, right {
     width: 100%;
     height: auto;
   }
+}
+li{
+  padding:9px;
 }
