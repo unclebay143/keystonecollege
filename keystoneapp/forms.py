@@ -22,6 +22,7 @@ class RegistrationForm(forms.Form):
                                      'class':'form-control',
                                      'placeholder':'Enter Your Mobile Number',
                                  }))
+    
 
     #Login Class
 

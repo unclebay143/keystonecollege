@@ -1,6 +1,6 @@
 from django.shortcuts import render
+#Create your views here.
 
-# Create your views here.
 def Science(request):
     context = {
     "hodscience":"Prof Ayodele Samuel Adebayo",
@@ -24,3 +24,6 @@ def Commercial(request):
 
 def Contact(request):
     return render(request, 'contact.html')
+
+def About(request):
+    return render(request, 'about.html')

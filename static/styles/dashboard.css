@@ -1,0 +1,14 @@
+body{
+  padding:5px;
+}
+.leftpanel{
+height: 390px;
+background-color:white;
+
+}
+
+.rightpanel{
+  height: %;
+  background-color:wheat;
+  overflow: hidden;
+}
