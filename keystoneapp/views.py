@@ -46,12 +46,8 @@ def AddStudent(request):
 
 #success page
 def Success(request):
-    studentregister = studentregister.object.get(username)
-    context = {
-    "studentregister":studentregister
-    }
-    messages.add_message(request, messages.SUCCESS, "You have signup sucessfully...Proceed to Login")
-    return render(request, 'success.html',context)
+    messages.add_message(request, messages.SUCCESS, "You have signup sucessfully...Proceed to ")
+    return render(request, 'success.html')
 
 def Login(request):
     return render(request, 'login.html')
