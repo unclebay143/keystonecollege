@@ -8,7 +8,7 @@ from django.contrib.auth.decorators import login_required
 
 
 
-# Create your views here.
+#  Create your views here.
 
 def Index(request):
     context = {
@@ -18,15 +18,16 @@ def Index(request):
     }
     return render(request, 'index.html',context)
 
-#student registrationform
+# student registrationform
 def Admission(request):
     context = {
         "form":RegistrationForm
     }
     return render(request, 'admission.html', context)
 
-#new student registration
+# new student registration
 def AddStudent(request):
+    
     form = RegistrationForm(request.POST)
 
     if form.is_valid():
@@ -44,7 +45,9 @@ def AddStudent(request):
 
     return redirect('success')
 
-#success page
+# success page
+
+
 def Success(request):
     messages.add_message(request, messages.SUCCESS, "You have signup sucessfully...Proceed to ")
     return render(request, 'success.html')
@@ -52,6 +55,9 @@ def Success(request):
 def Login(request):
     return render(request, 'login.html')
 
-#404 page not found
+# 404 page not found
 def Error404(request):
     return render(request, '404.html')
+
+def Dashboard(request):
+    return render(request, 'dashboard.html')
